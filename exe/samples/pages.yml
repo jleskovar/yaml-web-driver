@@ -1,0 +1,25 @@
+# Simple DLink-G604T Navigation
+---
+page: router
+frame: fInfo
+link_templates:
+ - home: //map[2]/area[1]
+ - adv: //map[2]/area[2]
+ - tools: //map[2]/area[3]
+ - status: //map[2]/area[4]
+ - help: //map[2]/area[5]
+ - //td[font/b[text()='%{link}']]
+
+---
+
+page: router-home
+frame: fInfo
+link_templates:
+ - //td[font/b[text()='%{link}']]
+
+---
+
+page: router-home-WAN
+frame: fInfo
+link_templates:
+ - //td[font/b[text()='%{link}']]

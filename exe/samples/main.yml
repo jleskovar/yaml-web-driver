@@ -1,0 +1,6 @@
+# Simple DLink-G604T Navigation
+ - open: http://admin:$ROUTER_PASSWORD@10.1.1.1
+ - click: router.status
+ - click: router.tools
+ - click: router.Logout
+ - alert: ok

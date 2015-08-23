@@ -1,0 +1,19 @@
+#!/usr/bin/env ruby
+require 'watir-webdriver'
+require 'yamlwebdriver'
+
+begin
+  puts('YAML Web Driver')
+  driver = YamlWebDriver::Bootstrap::Bootstrap.start
+  browser_spec_docs = YamlWebDriver::Spec::SpecParser.new.parse_from_cmdline
+  browser_spec = YamlWebDriver::Spec::BrowserSpec.new(browser_spec_docs)
+  spec_runner = browser_spec.runner(driver)
+  spec_runner.run
+  driver.exit
+  puts('Finished.')
+  exit 0
+rescue => e
+  $stderr.puts("Unexpected exception caught #{e}")
+  $stderr.puts(e.backtrace)
+  exit 1
+end
