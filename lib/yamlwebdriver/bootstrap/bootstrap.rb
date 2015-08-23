@@ -25,7 +25,7 @@ module YamlWebDriver
 
       def self.create_options(options)
         OptionParser.new do |opts|
-          opts.banner = 'Usage: yd [options]'
+          opts.banner = 'Usage: ywd [options] FILES...'
 
           options.headless = false
 
