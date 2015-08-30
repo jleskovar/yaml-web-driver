@@ -1,12 +1,12 @@
 #!/usr/bin/env ruby
 require 'watir-webdriver'
-require 'yamlwebdriver'
+require 'yaml-web-driver'
 
 begin
   puts('YAML Web Driver')
-  driver = YamlWebDriver::Bootstrap::Bootstrap.start
-  browser_spec_docs = YamlWebDriver::Spec::SpecParser.new.parse_from_cmdline
-  browser_spec = YamlWebDriver::Spec::BrowserSpec.new(browser_spec_docs)
+  driver = yaml-web-driver::Bootstrap::Bootstrap.start
+  browser_spec_docs = yaml-web-driver::Spec::SpecParser.new.parse_from_cmdline
+  browser_spec = yaml-web-driver::Spec::BrowserSpec.new(browser_spec_docs)
   spec_runner = browser_spec.runner(driver)
   spec_runner.run
   driver.exit

@@ -1,0 +1,34 @@
+#!/usr/bin/env ruby
+require 'watir-webdriver'
+require 'yaml-web-driver'
+require 'page-object'
+
+class DlinkRouter
+  include PageObject
+
+  in_frame(name: 'fInfo') do |frame|
+    element(:logout, 'element', xpath: "//td[font/b[text()='Logout']]", :frame => frame)
+  end
+
+end
+
+begin
+  puts('YAML Web Driver2')
+
+  driver = yaml-web-driver::Bootstrap::Bootstrap.start
+
+  driver.browser.goto 'http://admin:123zxcASDqwe@10.1.1.1'
+  dlink_router = DlinkRouter.new(driver.browser)
+  dlink_router.logout_element.click
+  driver.browser.alert.ok
+
+  puts 'closing'
+  driver.browser.close
+
+  puts('Finished.')
+  exit 0
+rescue => e
+  $stderr.puts("Unexpected exception caught #{e}")
+  $stderr.puts(e.backtrace)
+  exit 1
+end

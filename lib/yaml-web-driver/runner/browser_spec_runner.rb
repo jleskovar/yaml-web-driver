@@ -1,7 +1,7 @@
 module YamlWebDriver
   module Runner
     class BrowserSpecRunner
-      # @param [YamlWebDriver::WatirDriver] driver
+      # @param [yaml-web-driver::WatirDriver] driver
       # @param [Array] actions
       # @param [PageSpecs] pages
       def initialize(driver, actions, pages)

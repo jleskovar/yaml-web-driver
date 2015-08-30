@@ -5,7 +5,7 @@ module YamlWebDriver
         @page_link = page_link
       end
 
-      # @param [YamlWebDriver::WatirDriver] driver
+      # @param [yaml-web-driver::WatirDriver] driver
       # @param [PageSpecs] pages
       def run(driver, pages)
         page_name, link_name = @page_link.split('.')

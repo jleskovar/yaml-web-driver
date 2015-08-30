@@ -6,7 +6,7 @@ YAML-based Web Driver. Built using ruby and watir-webdriver.
 
 YAML Web Driver is intended to be used as a stand-alone command-line application. To install, run the following:
 
-    $ gem install yamlwebdriver
+    $ gem install yaml-web-driver
 
 If that doesn't work, I haven't yet pushed to rubygems, in which case you should check-out the source code and run:
 ```shell
@@ -69,7 +69,7 @@ To install this gem onto your local machine, run `bundle exec rake install:local
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/jleskovar/yamlwebdriver.
+Bug reports and pull requests are welcome on GitHub at https://github.com/jleskovar/yaml-web-driver.
 
 
 ## License

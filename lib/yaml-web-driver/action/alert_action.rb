@@ -5,7 +5,7 @@ module YamlWebDriver
         @action = action
       end
 
-      # @param [YamlWebDriver::WatirDriver] driver
+      # @param [yaml-web-driver::WatirDriver] driver
       def run(driver, _)
         if driver.browser.alert.exists?
           driver.browser.alert.send(@action)

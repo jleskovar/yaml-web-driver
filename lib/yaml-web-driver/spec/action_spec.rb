@@ -1,7 +1,7 @@
 
-require 'yamlwebdriver/action/open_action'
-require 'yamlwebdriver/action/alert_action'
-require 'yamlwebdriver/action/click_action'
+require 'yaml-web-driver/action/open_action'
+require 'yaml-web-driver/action/alert_action'
+require 'yaml-web-driver/action/click_action'
 
 module YamlWebDriver
   module Spec

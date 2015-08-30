@@ -1,4 +1,4 @@
-require 'yamlwebdriver/driver/watir_driver'
+require 'yaml-web-driver/driver/watir_driver'
 require 'watir-webdriver'
 require 'optparse'
 require 'ostruct'
@@ -14,7 +14,7 @@ module YamlWebDriver
 
     class Bootstrap
 
-      # @return [YamlWebDriver::WatirDriver]
+      # @return [yaml-web-driver::WatirDriver]
       def self.start
         options = BootstrapOptions.new
         optparse = create_options(options)

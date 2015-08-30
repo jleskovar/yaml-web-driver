@@ -5,7 +5,7 @@ module YamlWebDriver
       attr_accessor :options
       attr_accessor :browser
 
-      # @param [YamlWebDriver::BootstrapOptions] options
+      # @param [yaml-web-driver::BootstrapOptions] options
       # @param [Watir::Browser] browser
       def initialize(options, browser)
         @options = options

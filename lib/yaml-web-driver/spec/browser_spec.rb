@@ -1,7 +1,7 @@
 
-require 'yamlwebdriver/runner/browser_spec_runner'
-require 'yamlwebdriver/spec/action_spec'
-require 'yamlwebdriver/spec/page_specs'
+require 'yaml-web-driver/runner/browser_spec_runner'
+require 'yaml-web-driver/spec/action_spec'
+require 'yaml-web-driver/spec/page_specs'
 
 module YamlWebDriver
   module Spec
@@ -22,7 +22,7 @@ module YamlWebDriver
         @pages[page]
       end
 
-      # @return [YamlWebDriver::Runner::BrowserSpecRunner]
+      # @return [yaml-web-driver::Runner::BrowserSpecRunner]
       def runner(driver)
         Runner::BrowserSpecRunner.new(driver, @main.actions, @pages)
       end

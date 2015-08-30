@@ -1,5 +1,5 @@
 
-require 'yamlwebdriver/spec/page_spec'
+require 'yaml-web-driver/spec/page_spec'
 
 module YamlWebDriver
   module Spec
